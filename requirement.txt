@@ -1,0 +1,4 @@
+## requirement file for install the essiential stuff for th app run
+
+
+flask
