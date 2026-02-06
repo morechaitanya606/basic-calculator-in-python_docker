@@ -4,12 +4,6 @@ A safe and modern Flask-based web calculator with an improved UI and security fe
 
 ## Key Improvements
 
-### 🔒 Security Enhancements
-- **Removed `eval()`**: The original code used `eval()` which is extremely dangerous as it can execute arbitrary Python code
-- **Safe AST parsing**: Uses Python's Abstract Syntax Tree (AST) to safely parse and evaluate mathematical expressions
-- **Input validation**: Validates expressions against allowed characters and operations
-- **Whitelist approach**: Only allows specific mathematical operations
-
 ### ✨ Feature Improvements
 - **Better error handling**: Specific error messages for different types of failures
 - **Modern UI**: Beautiful gradient design with smooth animations
