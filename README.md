@@ -66,20 +66,6 @@ Visit `http://localhost:5000` in your browser.
 - `100 // 3` → 33
 - `(2 + 3) * (4 - 1)` → 15
 
-## Security Notes
-
-### Why the original code was dangerous:
-
-```python
-# DANGEROUS - DO NOT USE
-result = eval(expression)
-```
-
-This allows users to execute ANY Python code, including:
-- `__import__('os').system('rm -rf /')`  # Delete files
-- `open('/etc/passwd').read()`  # Read sensitive files
-- `__import__('subprocess').call(['malicious_command'])`  # Execute system commands
-
 ### How the new version is safe:
 
 The improved version uses AST parsing which:
